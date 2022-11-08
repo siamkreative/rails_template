@@ -3,7 +3,7 @@
 <ul>
   <% @users.each do |user| %>
     <li>
-      <%= user.first_name %> <%= user.last_name %> | <a href="mailto:<%= user.email %>">Send Email</a>
+      <%= user.first_name %> <%= user.last_name %> | <a href="mailto:<%= user.email %>">Send Email</a> | <%= link_to "View Profile", user %>
     </li>
   <% end %>
 </ul>
