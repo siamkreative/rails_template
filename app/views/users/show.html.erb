@@ -1,5 +1,6 @@
 <h1><%= @user.first_name %> <%= @user.last_name %></h1>
 
 <%= link_to "← Users", users_path %>
+<%= link_to "Edit", edit_user_path(@user) %>
 
 <p><%= @user.about %></p>
