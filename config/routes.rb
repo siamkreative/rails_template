@@ -4,4 +4,12 @@ Rails.application.routes.draw do
 
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
   resources :users
+
+  # Gems
+  devise_for :users,
+  :path => "account",
+  :path_names => {
+    :sign_in => 'login',
+    :sign_out => 'logout'
+  }
 end
