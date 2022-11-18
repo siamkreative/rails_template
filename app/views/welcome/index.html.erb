@@ -2,7 +2,6 @@
 <p>Find me in app/views/welcome/index.html.erb</p>
 
 <% if user_signed_in? %>
-    <p>Welcome back <%= current_user %>!</p>
     <ul>
         <li>
             <%= link_to "Manage Users", users_path %>
